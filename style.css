@@ -1,0 +1,112 @@
+/* Background Animations */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(-45deg, #0d0d0d, #1a1a1a, #000000, #121212);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    color: #fff;
+    scroll-behavior: smooth;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Particles behind everything */
+  #particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+  
+  /* Navigation bar */
+  header {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav h1 {
+    font-size: 24px;
+    color: #fff;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #00ffe1;
+  }
+  
+  /* Section styles */
+  section {
+    padding: 80px 40px;
+    max-width: 900px;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+  }
+  
+  h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #00ffe1;
+    display: inline-block;
+  }
+  
+  .card {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 255, 225, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 255, 225, 0.3);
+  }
+  
+  a {
+    color: #00ffe1;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Animated Gradient Keyframes */
+  @keyframes gradientBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
